@@ -43,6 +43,7 @@ body {
 .img-container {
   height: calc(100vh -20px);
   padding: 3rem 5rem 3rem 5rem;
+  max-height: 13rem;
 }
 
 .img-container img {
@@ -102,12 +103,12 @@ body {
 
 .blocks p {
   position: absolute;
-  top: 36%;
+  top: 32%;
   right: 14%;
   border: solid 2px #02979e;
   max-width: 70%;
-  font-size: 25px;
-  padding: 2.5px 0;
+  font-size: 23px;
+  padding: 7px 3px;
   border-radius: 45px;
 }
 
