@@ -5,7 +5,7 @@
 
 body {
   background-color: #02979e;
-  font-family: Arial Rounded MT;
+
   color: white;
   font-size: 10px;
 }
@@ -42,8 +42,8 @@ body {
 
 .img-container {
   height: calc(100vh -20px);
-  padding: 3rem 5rem 3rem 5rem;
-  max-height: 15rem;
+  padding: 3rem 3.5rem 3rem 3.5rem;
+  max-height: 16rem;
 }
 
 .img-container img {
@@ -56,8 +56,8 @@ body {
 /* About us */
 
 .title {
-  margin-bottom: 20px;
-
+  margin-bottom: 1.3rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -65,6 +65,8 @@ body {
   text-align: center;
   padding: 0 20px;
   margin-bottom: 30px;
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 .divider {
@@ -92,6 +94,7 @@ body {
   position: absolute;
   font-size: 40px;
   max-width: 50%;
+  line-height: 0.8;
 }
 
 .blocks img {
@@ -103,12 +106,12 @@ body {
 
 .blocks p {
   position: absolute;
-  top: 32%;
-  right: 14%;
+  top: 36%;
+  right: 13%;
   border: solid 2px #02979e;
   max-width: 70%;
-  font-size: 23px;
-  padding: 7px 3px;
+  font-size: 18px;
+  padding: 7px 5px;
   border-radius: 45px;
 }
 
