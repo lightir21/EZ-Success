@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #02979e;
+  font-family: Arial Rounded MT;
+  color: white;
+}
+
+/* Navbar */
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-container .contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.navbar-container .contacts a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.navbar-divider {
+  border-bottom: solid 2px white;
+  width: 100%;
+}
+.navbar-container .navigation {
+  display: none;
+}
+
+/* Hero section */
+
+.img-container {
+  height: calc(100vh -20px);
+  padding: 40px 80px 40px 80px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+
+  object-position: center;
+}
+
+/* About us */
+
+.title {
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.secondary-title {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.divider {
+  height: 0px;
+  border-top: solid 2px white;
+  margin: 0 24px 30px 24px;
+}
+
+.blocks-container {
+  padding: 0 20px;
+}
+
+.blocks {
+  width: 100%;
+  height: 40vh;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 48px;
+}
+
+.blocks h2 {
+  top: 0%;
+  right: 25%;
+  position: absolute;
+  font-size: 40px;
+  max-width: 50%;
+}
+
+.blocks img {
+  object-fit: cover;
+  width: 80%;
+  height: 40vh;
+  border-radius: 48px;
+}
+
+.blocks p {
+  position: absolute;
+  top: 38%;
+  right: 14%;
+  border: solid 2px #02979e;
+  max-width: 70%;
+  font-size: 25px;
+  padding: 2.5px 0;
+  border-radius: 45px;
+}
+
+.overlay {
+  width: 80%;
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.664);
+  position: absolute;
+  top: 0;
+  right: 10%;
+  border-radius: 48px;
+}
