@@ -76,15 +76,21 @@ body {
 }
 
 .blocks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .blocks {
   width: 17rem;
   height: 14rem;
   text-align: center;
-  position: relative;
   margin-bottom: 1.5rem;
   border-radius: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .blocks img {
@@ -92,37 +98,42 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 48px;
-  position: absolute;
-  top: 0;
-  right: 16.5%;
-}
-
-.overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.664);
-  position: absolute;
-  top: 0;
-  right: 16.5%;
-  border-radius: 48px;
 }
 
 .blocks h2 {
-  top: 3%;
-  right: 40%;
-  position: absolute;
   font-size: 40px;
-  max-width: 50%;
   line-height: 0.8;
+  margin-top: 0.2rem;
 }
 
 .blocks p {
-  position: absolute;
-  top: 36%;
-  right: 31%;
   border: solid 2px #02979e;
-  max-width: 85%;
   font-size: 18px;
-  padding: 7px 5px;
+  padding: 7px 3px;
   border-radius: 45px;
+  width: 80%;
+}
+
+.seminarion {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)),
+    url("./imgs/תמונה-סמינריון.jpg");
+  background-size: contain;
+}
+
+.academy {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)),
+    url("./imgs/עבודות-אקדמיות.jpg");
+  background-size: contain;
+}
+
+.translation {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)),
+    url("./imgs/תרגום\ מאמרים.jpg");
+  background-size: contain;
+}
+
+.fixes {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)),
+    url("./imgs/שרותי\ תיקון.jpg");
+  background-size: contain;
 }

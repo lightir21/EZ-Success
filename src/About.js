@@ -11,36 +11,34 @@ const About = () => {
       <div className="divider"></div>
       <div className="blocks-container">
         <div className="blocks seminarion">
-          <img
-            src={require("./imgs/תמונה-סמינריון.jpg")}
-            alt="seminarion photo"
-          />
-          <div className="overlay"></div>
-          <h2>עבודה סמינריונית</h2>
+          <h2>
+            עבודה<br></br>סמינריונית
+          </h2>
           <p className="inner-text">
             כתיבה במגוון תחומים במדעי החברה והרוח ובזמן קצר עם הצלחה מובטחת
           </p>
         </div>
+
         <div className="blocks academy">
-          <img src={require("./imgs/עבודות-אקדמיות.jpg")} alt="academic work" />
-          <div className="overlay"></div>
-          <h2>עבודות אקדמאיות</h2>
+          <h2>
+            עבודות<br></br>אקדמאיות
+          </h2>
           <p className="inner-text">
             כחלק משירותנו, אנו מספקים סיוע בכל קושי במטלה אקדמית בתואר שלכם.
           </p>
         </div>
         <div className="blocks translation">
-          <img src={require("./imgs/תרגום מאמרים.jpg")} alt="" />
-          <div className="overlay"></div>
-          <h2>תרגום מאמרים</h2>
+          <h2>
+            תרגום<br></br>מאמרים
+          </h2>
           <p className="inner-text">
             נתקלתם בקושי בהבנת מאמר? המאמר ארוך מדי לתרגום? אנחנו כאן בשבילכם.
           </p>
         </div>
         <div className="blocks fixes">
-          <img src={require("./imgs/שרותי תיקון.jpg")} alt="" />
-          <div className="overlay"></div>
-          <h2>שירות תיקונים</h2>
+          <h2>
+            שירות<br></br>תיקונים
+          </h2>
           <p className="inner-text">
             העבודה שלכם מצריכה תיקון? אנחנו כאן לכל תיקון שתצטרכו, כדי להביא את
             העבודה שלכם לרמה הגבוהה ביותר.
