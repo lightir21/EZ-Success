@@ -7,6 +7,7 @@ body {
   background-color: #02979e;
   font-family: Arial Rounded MT;
   color: white;
+  font-size: 10px;
 }
 
 /* Navbar */
@@ -41,7 +42,7 @@ body {
 
 .img-container {
   height: calc(100vh -20px);
-  padding: 40px 80px 40px 80px;
+  padding: 3rem 5rem 3rem 5rem;
 }
 
 .img-container img {
@@ -95,13 +96,13 @@ body {
 .blocks img {
   object-fit: cover;
   width: 80%;
-  height: 40vh;
+  height: 35vh;
   border-radius: 48px;
 }
 
 .blocks p {
   position: absolute;
-  top: 38%;
+  top: 36%;
   right: 14%;
   border: solid 2px #02979e;
   max-width: 70%;
@@ -112,7 +113,7 @@ body {
 
 .overlay {
   width: 80%;
-  height: 40vh;
+  height: 35vh;
   background-color: rgba(0, 0, 0, 0.664);
   position: absolute;
   top: 0;
