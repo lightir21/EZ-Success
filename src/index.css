@@ -31,26 +31,31 @@ body {
   line-height: 1.3;
 }
 
+.navbar-container .navigation {
+  display: none;
+}
+
 .navbar-divider {
   border-bottom: solid 2px white;
   width: 100%;
-}
-.navbar-container .navigation {
-  display: none;
+  margin-bottom: 3rem;
 }
 
 /* Hero section */
 
 .img-container {
-  height: 22rem;
-  padding: 3rem 1.5rem 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
 }
 
-.img-container img {
-  width: 100%;
-  height: 100%;
-
-  object-position: center;
+.image {
+  height: 23rem;
+  width: 23rem;
+  background-repeat: no-repeat;
+  background-image: url("./imgs/logo\ EZ\ success.jpg");
+  background-size: contain;
 }
 
 /* About us */
@@ -79,6 +84,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .blocks {
@@ -91,13 +97,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-}
-
-.blocks img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 48px;
 }
 
 .blocks h2 {
@@ -136,4 +135,58 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)),
     url("./imgs/שרותי\ תיקון.jpg");
   background-size: contain;
+}
+
+/*  Recommandations */
+
+.recom-sec {
+  background-color: #fff;
+}
+
+.phone-container {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.phone {
+  width: 15rem;
+  height: 30rem;
+  background-image: url("./imgs/PngItem_1071582.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  position: static;
+}
+
+.phone img {
+  width: 94%;
+  height: 94%;
+  padding-right: 0.5rem;
+  padding-bottom: 3.5rem;
+  z-index: 1;
+  position: static;
+}
+
+.overlay-top {
+  width: 100%;
+  height: 6rem;
+  background-color: #02979e;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.overlay-bot {
+  padding-bottom: 5rem;
+  background-color: #02979e;
+  clip-path: polygon(0 0, 50% 100%, 100% 0%, 100% 100%, 0 100%);
+}
+
+.title-recom {
+  font-size: 3rem;
+  text-align: center;
+  background-color: #fff;
+  color: black;
+  padding-bottom: 1rem;
 }

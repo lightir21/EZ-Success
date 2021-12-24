@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="img-container">
-        <img src={require("./logo-EZ-success.jpg")} alt="ez-success-logo" />
+        <div className="image"></div>
       </div>
     </section>
   );
