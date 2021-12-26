@@ -8,6 +8,7 @@ body {
 
   color: white;
   font-size: 10px;
+  font-family: "Inter";
 }
 
 /* Navbar */
@@ -58,6 +59,26 @@ body {
   background-size: contain;
 }
 
+.btn-container {
+  text-align: center;
+}
+
+.hero-btn {
+  background-color: #fdb548;
+  border: none;
+  padding: 0.5rem 2.2rem;
+  border-radius: 45px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-bottom: 0.8rem;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+}
+
 /* About us */
 
 .title {
@@ -71,7 +92,8 @@ body {
   padding: 0 20px;
   margin-bottom: 30px;
   font-size: 0.9rem;
-  font-weight: 300;
+  font-weight: 500;
+  padding: 0 2rem;
 }
 
 .divider {
@@ -108,6 +130,7 @@ body {
 .blocks p {
   border: solid 2px #02979e;
   font-size: 18px;
+  font-weight: 500;
   padding: 7px 3px;
   border-radius: 45px;
   width: 80%;
@@ -141,33 +164,32 @@ body {
 
 .recom-sec {
   background-color: #fff;
+  position: relative;
 }
 
 .phone-container {
   display: flex;
-  justify-content: center;
   background-color: #fff;
+  width: 15rem;
+  height: 30rem;
+  position: relative;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.whatsapp img {
+  width: 94%;
+  height: 90%;
+
+  top: -4%;
+  position: absolute;
 }
 
 .phone {
-  width: 15rem;
-  height: 30rem;
-  background-image: url("./imgs/PngItem_1071582.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  z-index: 2;
-  position: static;
-}
-
-.phone img {
   width: 94%;
   height: 94%;
-  padding-right: 0.5rem;
-  padding-bottom: 3.5rem;
-  z-index: 1;
-  position: static;
+  position: absolute;
+  z-index: 2;
 }
 
 .overlay-top {
@@ -189,4 +211,19 @@ body {
   background-color: #fff;
   color: black;
   padding-bottom: 1rem;
+}
+
+.next-btn {
+  position: absolute;
+  font-size: 2rem;
+  right: 0%;
+  top: 50%;
+}
+
+.prev-btn {
+  position: absolute;
+  font-size: 2rem;
+  left: 0%;
+  top: 50%;
+  z-index: 10;
 }
