@@ -1,23 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import images from "./images";
 import { GrNext, GrPrevious } from "react-icons/gr";
 
 const Recommandations = () => {
   const [curr, setCurr] = useState(0);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      nextSlide();
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, [curr]);
 
   const nextSlide = () => {
-    if (curr === images.length - 1) {
-      setCurr(0);
-    } else {
-      setCurr(curr + 1);
+    {
+      curr === images.length - 1 ? setCurr(0) : setCurr(curr + 1);
     }
   };
 
   const prevSlide = () => {
-    if (curr < 1) {
-      setCurr(images.length - 1);
-    } else {
-      setCurr(curr - 1);
+    {
+      curr < 1 ? setCurr(images.length - 1) : setCurr(curr--);
     }
   };
 

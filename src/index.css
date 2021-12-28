@@ -203,6 +203,7 @@ body {
   padding-bottom: 5rem;
   background-color: #02979e;
   clip-path: polygon(0 0, 50% 100%, 100% 0%, 100% 100%, 0 100%);
+  margin-bottom: 0.8rem;
 }
 
 .title-recom {
@@ -240,6 +241,75 @@ body {
 }
 
 .slide.active {
-  opacity: 1;
+  opacity: 100%;
+
   transition-duration: 3s ease-in;
+}
+/* Footer form */
+
+.footer-container {
+  display: flex;
+}
+
+.footer-info {
+  height: 10rem;
+
+  display: none;
+}
+
+.footer-form {
+  width: 50%;
+  height: 10rem;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-form h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+label {
+  font-size: 14px;
+}
+
+.email {
+  display: block;
+}
+.name {
+  display: block;
+}
+
+#name {
+  margin-right: 0.49rem;
+  margin-bottom: 0.8rem;
+  width: 65%;
+}
+
+#email {
+  margin-right: 1rem;
+  width: 65%;
+}
+
+.contacts-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+  text-align: center;
+  line-height: 2.2;
+}
+
+.contacts-footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.form-submit-btn {
+  background-color: #fdb548;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 45%;
+  margin-top: 0.5rem;
 }
