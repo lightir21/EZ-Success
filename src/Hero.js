@@ -23,7 +23,7 @@ const Hero = ({ scrollTo }) => {
           <FaInstagramSquare />
         </a>
       </div>
-      <FloatingWhatsApp phone={"+947547345792"} message={"צור איתנו קשר"} />
+      <FloatingWhatsApp phone={"947547345792"} message={"צור איתנו קשר"} />
     </section>
   );
 };
