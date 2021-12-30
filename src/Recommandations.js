@@ -27,16 +27,13 @@ const Recommandations = () => {
     <section className="recom-sec">
       <div className="overlay-top"></div>
       <h2 className="title-recom">לקוחות מרוצים</h2>
-      <button className="btn next-btn" onClick={() => nextSlide()}>
-        <GrNext />
-      </button>
+
       <div className="phone-container">
         <img
           src={require("./imgs/PngItem_1071582.png")}
           alt="phone case photo"
           className="phone"
         />
-
         <div className="whatsapp">
           {images.map((img, index) => {
             if (curr === index) {
@@ -50,12 +47,16 @@ const Recommandations = () => {
               );
             }
           })}
-        </div>
+        </div>{" "}
+        <button className="btn next-btn" onClick={() => nextSlide()}>
+          <GrNext />
+        </button>{" "}
+        <button className="btn prev-btn" onClick={() => prevSlide()}>
+          {" "}
+          <GrPrevious />{" "}
+        </button>
       </div>
-      <button className="btn prev-btn" onClick={() => prevSlide()}>
-        {" "}
-        <GrPrevious />{" "}
-      </button>
+
       <div className="overlay-bot"></div>
     </section>
   );
