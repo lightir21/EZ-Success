@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react/cjs/react.development";
 
 const Navbar = () => {
-  const [text, setText] = useState("0543193359");
   const [isClick, setIsClick] = useState(false);
   return (
     <>
@@ -11,7 +10,7 @@ const Navbar = () => {
           <div className={`${isClick ? "popup active" : "popup"}`}>הועתק</div>
           <button
             onClick={(e) => {
-              navigator.clipboard.writeText(text);
+              navigator.clipboard.writeText("0547345792");
               setIsClick(true);
               setTimeout(() => {
                 setIsClick(false);
@@ -22,14 +21,13 @@ const Navbar = () => {
           </button>
           <button
             onClick={() => {
-              navigator.clipboard.writeText(text);
+              navigator.clipboard.writeText("ezsucess@gmail.com");
               setIsClick(true);
               setTimeout(() => {
                 setIsClick(false);
               }, 3000);
             }}
           >
-            {" "}
             אימייל: ezsucess@gmail.com
           </button>
         </div>
