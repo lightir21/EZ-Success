@@ -1,7 +1,5 @@
 import React from "react";
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
-import { FloatingWhatsApp } from "react-floating-whatsapp-button";
-import "react-floating-whatsapp-button/dist/index.css";
 
 const Hero = ({ scrollTo }) => {
   return (
@@ -22,7 +20,6 @@ const Hero = ({ scrollTo }) => {
           <FaInstagramSquare />
         </a>
       </div>
-      <FloatingWhatsApp phone={"+947547345792"} />
     </section>
   );
 };
