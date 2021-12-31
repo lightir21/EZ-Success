@@ -1,8 +1,9 @@
 import React from "react";
-import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
-
-import { FloatingWhatsApp } from "react-floating-whatsapp-button";
-import "react-floating-whatsapp-button/dist/index.css";
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const Hero = ({ scrollTo }) => {
   return (
@@ -23,7 +24,9 @@ const Hero = ({ scrollTo }) => {
           <FaInstagramSquare />
         </a>
       </div>
-      <FloatingWhatsApp phone={"972547345792"} message={"צור איתנו קשר"} />
+      <a href="https://wa.me/972547345792" className="whats-icon">
+        <FaWhatsapp />
+      </a>
     </section>
   );
 };
