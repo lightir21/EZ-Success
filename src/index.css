@@ -46,6 +46,7 @@ body {
   background-color: rgba(0, 0, 0, 0.664);
   position: absolute;
   align-self: flex-start;
+  border-radius: 100px;
 }
 
 .navbar-container .navigation {
@@ -77,6 +78,7 @@ body {
 
 .btn-container {
   text-align: center;
+  margin-bottom: 0.8rem;
 }
 
 .hero-btn {
@@ -88,7 +90,7 @@ body {
   font-size: 18px;
   transition: 0.3s;
   cursor: pointer;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero-btn:hover {
@@ -137,6 +139,61 @@ body {
   transform: translateY(-3px);
 }
 
+/* Mid-Form */
+
+.mid-container {
+  width: 100%;
+
+  text-align: center;
+
+  margin: auto;
+  background-color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+  display: none;
+}
+
+.mid-form-title h3 {
+  font-size: 24px;
+  color: #02979e;
+}
+
+.mid-form form {
+  width: 1500px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 24px;
+}
+
+.mid-form form input {
+  background-color: transparent;
+  border: solid 2px #02979e;
+  border-radius: 100px;
+  height: 30px;
+  width: 15rem;
+  font-weight: 600;
+}
+
+.mid-form-submit-btn {
+  background-color: #02979e;
+  color: #fff;
+  height: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  padding: 0 35px;
+  border-radius: 100px;
+  transform: translateY(5px);
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.mid-form-submit-btn:hover {
+  transform: translateY(2px);
+}
+
 /* About us */
 
 .title {
@@ -149,7 +206,7 @@ body {
   text-align: center;
   padding: 0 20px;
   margin-bottom: 30px;
-  font-size: 0.9rem;
+  font-size: 18px;
   font-weight: 500;
   padding: 0 2rem;
 }
@@ -362,4 +419,71 @@ label {
   border: none;
   border-radius: 45%;
   margin-top: 0.5rem;
+}
+
+@media (min-width: 1000px) {
+  .navbar-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .navbar-container .navigation {
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    justify-content: space-evenly;
+  }
+
+  .navbar-container .navigation button {
+    background-color: transparent;
+    border: solid 1px #fff;
+    color: #fff;
+    font-weight: 600;
+    height: 40px;
+    width: 80px;
+    border-radius: 100px;
+    margin-left: 0.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .navbar-container .navigation button:hover {
+    transform: translateY(-2px);
+  }
+
+  .mid-container {
+    display: block;
+  }
+
+  .blocks-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .secondary-title {
+    margin: 0 auto;
+    width: 40%;
+  }
+
+  .blocks {
+    transition: 0.3s;
+  }
+
+  .blocks h2 {
+    transform: translateY(50px);
+    transition: 0.3s;
+  }
+
+  .inner-text {
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .blocks:hover .inner-text {
+    opacity: 1;
+  }
+
+  .blocks:hover h2 {
+    transform: translateY(0px);
+  }
 }

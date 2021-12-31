@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import About from "./About";
 import Recommandations from "./Recommandations";
 import FooterForm from "./FooterForm";
+import MidForm from "./MidForm";
 
 const App = () => {
   const scroll = useRef(null);
@@ -12,7 +13,7 @@ const App = () => {
     <>
       <Navbar />
       <Hero scrollTo={scrollTo} />
-
+      <MidForm />
       <About />
       <Recommandations />
       <FooterForm scroll={scroll} />
