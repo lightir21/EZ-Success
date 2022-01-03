@@ -7,16 +7,26 @@ import FooterForm from "./FooterForm";
 import MidForm from "./MidForm";
 
 const App = () => {
-  const scroll = useRef(null);
-  const scrollTo = () => scroll.current.scrollIntoView({ behavior: "smooth" });
+  const scrollToForm = useRef(null);
+  const scrollToFormFun = () =>
+    scrollToForm.current.scrollIntoView({ behavior: "smooth" });
+
+  const scrollToRecom = useRef(null);
+  const scrollToRecomFun = () =>
+    scrollToRecom.current.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "start",
+    });
+
   return (
     <>
-      <Navbar />
-      <Hero scrollTo={scrollTo} />
+      <Navbar scrollToRecomFun={scrollToRecomFun} />
+      <Hero scrollToFormFun={scrollToFormFun} />
       <MidForm />
       <About />
-      <Recommandations />
-      <FooterForm scroll={scroll} />
+      <Recommandations scrollToRecom={scrollToRecom} />
+      <FooterForm scrollToForm={scrollToForm} />
     </>
   );
 };

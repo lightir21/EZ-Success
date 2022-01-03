@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ scrollToRecomFun }) => {
   const [isClick, setIsClick] = useState(false);
   return (
     <>
@@ -10,7 +10,7 @@ const Navbar = () => {
           <div className={`${isClick ? "popup active" : "popup"}`}>הועתק</div>
           <button
             onClick={(e) => {
-              navigator.clipboard.writeText("0547345792");
+              navigator.clipboard.writeText("0543193359");
               setIsClick(true);
               setTimeout(() => {
                 setIsClick(false);
@@ -21,21 +21,23 @@ const Navbar = () => {
           </button>
           <button
             onClick={() => {
-              navigator.clipboard.writeText("ezsucess@gmail.com");
+              navigator.clipboard.writeText("ez.success12@gmail.com");
               setIsClick(true);
               setTimeout(() => {
                 setIsClick(false);
               }, 3000);
             }}
           >
-            אימייל: ezsucess@gmail.com
+            אימייל: ez.success12@gmail.com
           </button>
         </div>
 
         <div className="navigation">
           <button>בית</button>
           <button>עלינו</button>
-          <button>לקוחות כותבים</button>
+          <button className="recom-btn" onClick={scrollToRecomFun}>
+            לקוחות כותבים
+          </button>
           <button>צרו קשר</button>
         </div>
       </section>

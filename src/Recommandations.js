@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import images from "./images";
 import { GrNext, GrPrevious } from "react-icons/gr";
 
-const Recommandations = () => {
+const Recommandations = ({ scrollToRecom }) => {
   const [curr, setCurr] = useState(0);
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -18,14 +18,10 @@ const Recommandations = () => {
   };
 
   const prevSlide = () => {
-    {
-      curr < 1 ? setCurr(images.length - 1) : setCurr(curr--);
-    }
+    curr < 1 ? setCurr(images.length - 1) : setCurr(curr - 1);
   };
-
   return (
-    <section className="recom-sec">
-      <div className="overlay-top"></div>
+    <section className="recom-sec" ref={scrollToRecom}>
       <h2 className="title-recom">לקוחות מרוצים</h2>
 
       <div className="phone-container">
@@ -47,13 +43,12 @@ const Recommandations = () => {
               );
             }
           })}
-        </div>{" "}
+        </div>
         <button className="btn next-btn" onClick={() => nextSlide()}>
           <GrNext />
-        </button>{" "}
+        </button>
         <button className="btn prev-btn" onClick={() => prevSlide()}>
-          {" "}
-          <GrPrevious />{" "}
+          <GrPrevious />
         </button>
       </div>
 

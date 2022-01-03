@@ -1,13 +1,25 @@
 import React from "react";
 
-const FooterForm = ({ scroll }) => {
+const FooterForm = ({ scrollToForm }) => {
   return (
-    <div className="footer-container" ref={scroll}>
+    <div className="footer-container" ref={scrollToForm}>
       <div className="footer-info">
         <div className="contacts-footer">
           <h2>צרו איתנו קשר</h2>
-          <a href="#">פלאפון: 0543193359</a>
-          <a href="#"> אימייל: ezsucess@gmail.com</a>
+          <button
+            onClick={(e) => {
+              navigator.clipboard.writeText("0543193359");
+            }}
+          >
+            פלאפון: 0543193359
+          </button>
+          <button
+            onClick={() => {
+              navigator.clipboard.writeText("ez.success12@gmail.com");
+            }}
+          >
+            אימייל: ez.success12@gmail.com
+          </button>
         </div>
       </div>
       <div className="footer-form">

@@ -5,14 +5,14 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
-const Hero = ({ scrollTo }) => {
+const Hero = ({ scrollToFormFun }) => {
   return (
     <section className="hero">
       <div className="img-container">
         <div className="image"></div>
       </div>
       <div className="btn-container">
-        <button className="hero-btn" onClick={scrollTo}>
+        <button className="hero-btn" onClick={scrollToFormFun}>
           צרו קשר
         </button>
       </div>
@@ -24,7 +24,7 @@ const Hero = ({ scrollTo }) => {
           <FaInstagramSquare />
         </a>
       </div>
-      <a href="https://wa.me/972547345792" className="whats-icon">
+      <a href="https://wa.me/972543193359" className="whats-icon">
         <FaWhatsapp />
       </a>
     </section>
