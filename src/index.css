@@ -115,9 +115,13 @@ body {
 
 .facebook {
   color: #3b5998;
+  height: 48px;
+  width: 48px;
 }
 .insta {
   color: #8a3ab9;
+  height: 48px;
+  width: 48px;
 }
 
 .whats-icon {
