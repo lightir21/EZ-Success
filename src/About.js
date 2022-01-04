@@ -1,9 +1,11 @@
 import React from "react";
 
-const About = () => {
+const About = ({ scrollToAbout }) => {
   return (
     <>
-      <h1 className="title">מי אנחנו?</h1>
+      <h1 className="title" ref={scrollToAbout}>
+        מי אנחנו?
+      </h1>
       <h3 className="secondary-title">
         צוות כותבים עם ניסיון רב בעולם האקדמי, אשר מספק שירותים מהירים, איכותיים
         והוגנים ומביא לכם את המתכון להצלחה בזמן הקצר ביותר.

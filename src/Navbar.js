@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const Navbar = ({ scrollToRecomFun }) => {
+const Navbar = ({ scrollToRecomFun, scrollToAboutFun, scrollToFormFun }) => {
   const [isClick, setIsClick] = useState(false);
   return (
     <>
@@ -9,7 +9,7 @@ const Navbar = ({ scrollToRecomFun }) => {
         <div className="contacts">
           <div className={`${isClick ? "popup active" : "popup"}`}>הועתק</div>
           <button
-            onClick={(e) => {
+            onClick={() => {
               navigator.clipboard.writeText("0543193359");
               setIsClick(true);
               setTimeout(() => {
@@ -34,11 +34,11 @@ const Navbar = ({ scrollToRecomFun }) => {
 
         <div className="navigation">
           <button>בית</button>
-          <button>עלינו</button>
+          <button onClick={scrollToAboutFun}>עלינו</button>
           <button className="recom-btn" onClick={scrollToRecomFun}>
             לקוחות כותבים
           </button>
-          <button>צרו קשר</button>
+          <button onClick={scrollToFormFun}>צרו קשר</button>
         </div>
       </section>
       <div className="navbar-divider"></div>
