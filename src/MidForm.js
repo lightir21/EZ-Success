@@ -8,20 +8,21 @@ const MidForm = (toSend, setToSend) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-
-    send(
-      "service_rc9k8x9",
-      "template_zl582b7",
-      toSend,
-      "user_6IV0zNnkbdBxBaYAfepbn"
-    )
-      .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-      })
-      .catch((err) => {
-        console.log("FAILED...", err);
-      });
-    setToSend({ from_name: "", message: "", reply_to: "" });
+    if (toSend.name && toSend.reply_to && toSend.from_name) {
+      send(
+        "service_rc9k8x9",
+        "template_zl582b7",
+        toSend,
+        "user_6IV0zNnkbdBxBaYAfepbn"
+      )
+        .then((response) => {
+          console.log("SUCCESS!", response.status, response.text);
+        })
+        .catch((err) => {
+          console.log("FAILED...", err);
+        });
+      setToSend({ from_name: "", message: "", reply_to: "" });
+    }
   };
 
   return (
