@@ -116,7 +116,7 @@ body {
   position: fixed;
   display: flex;
   flex-direction: column;
-  top: 30%;
+  top: 9%;
   left: 0%;
   z-index: 10;
 }
@@ -311,10 +311,10 @@ body {
 }
 
 .whatsapp img {
-  width: 94%;
-  height: 90%;
-
-  top: -4%;
+  width: 85%;
+  height: 80%;
+  right: 5%;
+  top: 8%;
   position: absolute;
 }
 
@@ -447,7 +447,7 @@ label {
 .form-submit-btn {
   color: #02979e;
   background-color: #fff;
-  padding: 0.6rem 1.2rem;
+  padding: 0.8rem 2.2rem;
   border: none;
   border-radius: 45%;
   margin-top: 0.5rem;

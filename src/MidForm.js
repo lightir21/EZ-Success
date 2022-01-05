@@ -22,6 +22,8 @@ const MidForm = (toSend, setToSend) => {
           console.log("FAILED...", err);
         });
       setToSend({ from_name: "", message: "", reply_to: "" });
+    } else {
+      alert("אחד או יותר מהשדות ריקות... יש למלא את כל הפרטים");
     }
   };
 
