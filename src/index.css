@@ -252,6 +252,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  box-shadow: 0 20px 30px 0px rgba(0, 0, 0, 0.3);
 }
 
 .blocks h2 {
@@ -271,25 +272,29 @@ body {
 .seminarion {
   background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)),
     url("./imgs/תמונה-סמינריון.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .academy {
   background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)),
     url("./imgs/עבודות-אקדמיות.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .translation {
   background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)),
     url("./imgs/תרגום\ מאמרים.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .fixes {
   background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)),
     url("./imgs/שרותי\ תיקון.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*  Recommandations */
